@@ -1,89 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Dhanam Scales - Electronic weighing machines, weighing solutions, installation, repair and service.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Dhanam Scales - Electronic weighing machines and weighing solutions in Chidambaram.">
 <title>Dhanam Scales | Weighing Solutions</title>
-<style>
-:root{--blue:#082d63;--blue2:#0b4b8a;--gold:#d2a53d;--cream:#fffaf0;--ink:#17202a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream)}
-nav{position:sticky;top:0;z-index:20;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 6%;box-shadow:0 2px 15px #0002}
-.logo{height:58px;width:58px;object-fit:contain;border-radius:50%}.brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--blue);font-size:1.2rem}.brand small{display:block;color:#777;font-size:.7rem;letter-spacing:1px}
-nav a{color:var(--blue);text-decoration:none;font-weight:700;margin-left:20px}
-.hero{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;padding:78px 6%}
-.wrap{max-width:1120px;margin:auto}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:45px;align-items:center}
-.kicker{color:#f4cf72;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.02;margin:12px 0 20px}.hero p{font-size:1.15rem;max-width:680px}
-.btn{display:inline-block;padding:14px 21px;border-radius:9px;text-decoration:none;font-weight:800;margin:8px 8px 0 0}.primary{background:#f0c766;color:#092e61}.light{border:2px solid white;color:white}
-.hero-logo{background:#fff;border-radius:24px;padding:22px;text-align:center;box-shadow:0 25px 55px #0004}.hero-logo img{width:100%;max-width:300px;aspect-ratio:1;object-fit:contain}.hero-logo h2{color:var(--blue);margin:8px 0}
-section{padding:70px 6%}.section-title{text-align:center;color:var(--blue);font-size:2.1rem;margin:0 0 35px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;padding:27px;border-radius:17px;box-shadow:0 7px 25px #00000010}.card h3{color:var(--blue);margin-top:0}
-.icon{font-size:2rem}.alt{background:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.about-logo{width:100%;max-width:320px;display:block;margin:auto;border-radius:20px}
-.contact{background:var(--blue);color:#fff}.contact .section-title{color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{background:#ffffff12;border:1px solid #ffffff33;border-radius:17px;padding:28px}.contact a{color:#f3cf70}.whatsapp{display:inline-block;background:#f0c766;color:#092e61!important;padding:13px 18px;border-radius:9px;text-decoration:none;font-weight:800}
-footer{background:#061e40;color:#d9e3ef;text-align:center;padding:25px}
-@media(max-width:780px){nav{flex-wrap:wrap;gap:8px}nav .links{width:100%;text-align:center}nav a{margin:0 6px;font-size:.88rem}.hero{padding-top:50px}.hero-grid,.cards,.about-grid,.contact-grid{grid-template-columns:1fr}section{padding:52px 6%}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <div class="brand"><img class="logo" src="logo.jpg" alt="Dhanam Scales logo"><div>DHANAM SCALES<small>WEIGHING SOLUTIONS</small></div></div>
-  <div class="links"><a href="#home">Home</a><a href="#products">Products</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-</nav>
-
-<header id="home" class="hero">
-<div class="wrap hero-grid">
-  <div><div class="kicker">ACCURACY • QUALITY • SERVICE</div>
-  <h1>Reliable weighing machines for your business.</h1>
-  <p>Dhanam Scales offers electronic weighing machines and practical weighing solutions for retail shops, commercial businesses and everyday weighing needs.</p>
-  <a class="btn primary" href="#products">Explore Products</a>
-  <a class="btn light" href="#contact">Get in Touch</a></div>
-  <div class="hero-logo"><img src="logo.jpg" alt="Peacock logo of Dhanam Scales"><h2>Dhanam Scales</h2><p>Quality weighing equipment & customer support</p></div>
+<header>
+<div class="top">
+<a class="brand" href="#home"><img src="logo.jpg" alt="Dhanam Scales logo"><div><b>DHANAM SCALES</b><small>WEIGHING SOLUTIONS</small></div></a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav><a href="#home">Home</a><a href="#products">Products</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </div>
 </header>
 
-<section id="products">
-<div class="wrap"><h2 class="section-title">Our Products</h2>
-<div class="cards">
-<div class="card"><div class="icon">⚖️</div><h3>Electronic Weighing Scales</h3><p>Digital weighing machines for shops and commercial applications.</p></div>
-<div class="card"><div class="icon">🏪</div><h3>Retail Scales</h3><p>Convenient weighing solutions for grocery, provision and retail counters.</p></div>
-<div class="card"><div class="icon">📦</div><h3>Platform Scales</h3><p>Suitable for larger loads and commercial weighing requirements.</p></div>
-<div class="card"><div class="icon">🧮</div><h3>Price Computing Scales</h3><p>Weigh products and calculate selling price efficiently at the counter.</p></div>
-<div class="card"><div class="icon">🔧</div><h3>Accessories & Spares</h3><p>Supporting accessories and replacement parts for weighing equipment.</p></div>
-<div class="card"><div class="icon">💼</div><h3>Business Requirements</h3><p>Tell us your capacity and application and we can suggest a suitable model.</p></div>
-</div></div>
+<section id="home" class="hero">
+<div><p class="eyebrow">ACCURACY • QUALITY • SERVICE</p>
+<h1>Reliable weighing machines for your business.</h1>
+<p class="lead">Dhanam Scales offers electronic weighing machines and practical weighing solutions for retail shops, commercial businesses and everyday weighing needs in and around Chidambaram.</p>
+<div class="buttons"><a class="btn gold" href="#products">Explore Products</a><a class="btn white" href="#contact">Get in Touch</a></div></div>
+<div class="hero-card"><img src="logo.jpg" alt="Dhanam Scales"><h2>Trusted Weighing Solutions</h2><p>Solutions for shops, businesses and daily weighing requirements.</p></div>
 </section>
 
-<section id="services" class="alt">
-<div class="wrap"><h2 class="section-title">Our Services</h2>
-<div class="cards">
-<div class="card"><h3>Installation</h3><p>Assistance with machine setup and basic operating guidance.</p></div>
-<div class="card"><h3>Repair & Maintenance</h3><p>Troubleshooting, repair and maintenance support for weighing machines.</p></div>
-<div class="card"><h3>Verification Support</h3><p>Guidance for applicable weighing-machine verification and documentation processes.</p></div>
-</div></div>
-</section>
+<section id="products" class="section"><div class="heading"><p class="eyebrow dark">OUR PRODUCTS</p><h2>Weighing machines for every need</h2><p>Ask us for the right capacity and model for your business.</p></div>
+<div class="grid three">
+<article><span>⚖️</span><h3>Shop Weighing Scales</h3><p>Reliable electronic scales for retail shops and everyday weighing.</p></article>
+<article><span>🏪</span><h3>Commercial Scales</h3><p>Practical weighing solutions for commercial and business applications.</p></article>
+<article><span>🔧</span><h3>Accessories</h3><p>Ask us about compatible accessories and replacement requirements.</p></article>
+</div></section>
 
-<section id="about">
-<div class="wrap about-grid">
-<div><h2 class="section-title" style="text-align:left">About Dhanam Scales</h2>
-<p>Dhanam Scales is a weighing-machine business focused on dependable equipment and helpful customer service. Our aim is to make selecting, installing and maintaining weighing equipment straightforward.</p>
-<p><strong>Need a weighing machine?</strong> Contact us with your required capacity, application and location.</p></div>
-<img class="about-logo" src="logo.jpg" alt="Dhanam Scales logo">
-</div>
-</section>
+<section id="services" class="section light"><div class="heading"><p class="eyebrow dark">OUR SERVICES</p><h2>Support beyond the sale</h2></div>
+<div class="grid two"><article><h3>Installation</h3><p>Help with installation and setup.</p></article><article><h3>Repair & Service</h3><p>Support for weighing machine service needs.</p></article><article><h3>Calibration Support</h3><p>Guidance for accurate weighing requirements.</p></article><article><h3>Product Guidance</h3><p>Choose a suitable scale for your application.</p></article></div></section>
 
-<section id="contact" class="contact">
-<div class="wrap"><h2 class="section-title">Contact Dhanam Scales</h2>
-<div class="contact-grid">
-<div class="contact-card"><h3>Contact Details</h3>
-<p>📞 Phone: <a href="tel:+910000000000">+91 XXXXX XXXXX</a></p>
-<p>💬 WhatsApp: <a href="https://wa.me/910000000000">+91 XXXXX XXXXX</a></p>
-<p>✉️ Email: <a href="mailto:your@email.com">your@email.com</a></p>
-<p>📍 Address: Your shop address, Tamil Nadu, India</p></div>
-<div class="contact-card"><h3>Product Enquiry</h3><p>Send us the weighing capacity you need and what you want to weigh. We'll help you choose a suitable machine.</p>
-<a class="whatsapp" href="https://wa.me/910000000000?text=Hello%20Dhanam%20Scales%2C%20I%20need%20a%20weighing%20machine.%20Please%20share%20details.">WhatsApp Enquiry</a></div>
-</div></div>
-</section>
+<section id="about" class="about"><div><p class="eyebrow">ABOUT DHANAM SCALES</p><h2>Accuracy you can depend on.</h2><p>We provide electronic weighing machines and weighing solutions with a focus on accuracy, quality and dependable customer service.</p></div><div class="address"><b>📍 Serving Chidambaram</b><p>90, West Car Street, Chidambaram<br>(Baroda Bank upstairs)</p></div></section>
 
-<footer>© 2026 Dhanam Scales • Weighing Solutions</footer>
-</body>
-</html>
+<section id="contact" class="section"><div class="heading"><p class="eyebrow dark">CONTACT US</p><h2>Let's find the right weighing solution.</h2><p>Call or WhatsApp for product details, pricing and service enquiries.</p></div>
+<div class="grid two contact">
+<a href="tel:+918825829475"><span>📞</span><div><small>CALL US</small><b>88258 29475</b></div></a>
+<a href="https://wa.me/918973858949?text=Hello%20Dhanam%20Scales%2C%20I%20would%20like%20to%20know%20about%20your%20weighing%20machines." target="_blank"><span>💬</span><div><small>WHATSAPP</small><b>89738 58949</b></div></a>
+<a href="mailto:elangovignesh170@gmail.com"><span>✉️</span><div><small>EMAIL</small><b>elangovignesh170@gmail.com</b></div></a>
+<a href="https://www.google.com/maps/search/?api=1&query=90%20West%20Car%20Street%2C%20Chidambaram%2C%20Tamil%20Nadu" target="_blank"><span>📍</span><div><small>VISIT US</small><b>90, West Car Street, Chidambaram</b></div></a>
+</div></section>
+
+<footer><div><b>DHANAM SCALES</b><p>WEIGHING SOLUTIONS</p></div><p>© <span id="year"></span> Dhanam Scales. All rights reserved.</p></footer>
+<a class="float" href="https://wa.me/918973858949?text=Hello%20Dhanam%20Scales%2C%20I%20would%20like%20to%20know%20about%20your%20weighing%20machines." target="_blank">💬</a>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body></html>
